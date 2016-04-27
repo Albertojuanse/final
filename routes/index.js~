@@ -1,14 +1,22 @@
 var express = require('express');
 var router = express.Router();
 
+<<<<<<< HEAD
+var quizController = require('../controllers/quiz_controller');
+=======
 var quizController = require('../controllers/quiz_controler');
+>>>>>>> 550e2379dd4aafcdd6f734106b60e3bcbb300c6b
 
 /* GET home page. */
 router.get('/', function(req, res) {
   res.render('index', { title: 'Quiz' });
 });
 
+<<<<<<< HEAD
 router.get('/question', quizController.question);
+=======
+router.get('/questions', quizController.question);
+>>>>>>> 550e2379dd4aafcdd6f734106b60e3bcbb300c6b
 router.get('/check', quizController.check);
 
 module.exports = router;
